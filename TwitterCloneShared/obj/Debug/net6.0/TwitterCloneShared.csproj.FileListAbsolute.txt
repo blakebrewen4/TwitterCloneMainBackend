@@ -1,0 +1,5 @@
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net6.0\TwitterCloneShared.csproj.AssemblyReference.cache
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net6.0\TwitterCloneShared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net6.0\TwitterCloneShared.AssemblyInfoInputs.cache
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net6.0\TwitterCloneShared.AssemblyInfo.cs
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net6.0\TwitterCloneShared.csproj.CoreCompileInputs.cache

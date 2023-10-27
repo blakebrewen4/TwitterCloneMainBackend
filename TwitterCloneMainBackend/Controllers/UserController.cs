@@ -1,15 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TwitterCloneMainBackend.Data;
 
-public class UserController : Controller
+namespace TwitterCloneMainBackend.Controllers
 {
-    private readonly TwitterDbContext _context;
-
-    public UserController(TwitterDbContext context)
+    public class UserController : Controller
     {
-        _context = context;
+        private readonly TwitterDbContext _context;
+
+        public UserController(TwitterDbContext context)
+        {
+            _context = context;
+        }
+
+        // Use _context to interact with the database
     }
-
-    // Use _context to interact with the database
 }
-
