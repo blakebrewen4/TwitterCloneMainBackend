@@ -7,7 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterCloneMainBackend", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterCloneAPIUserAuth", "..\TwitterCloneAPIUserAuth\TwitterCloneAPIUserAuth.csproj", "{D8050A63-F107-4439-BBEA-8D45BF278BCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwitterCloneShared", "TwitterCloneShared\TwitterCloneShared.csproj", "{CFCAF1C6-10C2-432D-A271-DA089534CFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwitterCloneShared", "TwitterCloneShared\TwitterCloneShared.csproj", "{CFCAF1C6-10C2-432D-A271-DA089534CFD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{43900B1B-4C70-4CA0-A0FE-0CD35112C3DC}"
+	ProjectSection(SolutionItems) = preProject
+		ServiceConfiguration.cs = ServiceConfiguration.cs
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
