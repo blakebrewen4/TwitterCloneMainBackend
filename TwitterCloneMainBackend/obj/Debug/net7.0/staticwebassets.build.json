@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l54QZirXuJlHx5oXZT3i4Y0A4P8SgoXzr12JNFS2qHE=",
+  "Hash": "iN0zxuTF0Sj7eaafbLc5K86VSmUuqcvm8nEmBwXKpKk=",
   "Source": "TwitterCloneMainBackend",
   "BasePath": "_content/TwitterCloneMainBackend",
   "Mode": "Default",
@@ -12,10 +12,10 @@
       "Source": "TwitterCloneAPIUserAuth",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
       "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
     }
   ],
   "DiscoveryPatterns": [
