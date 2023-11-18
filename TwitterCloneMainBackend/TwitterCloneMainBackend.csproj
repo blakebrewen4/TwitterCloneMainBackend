@@ -27,7 +27,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0.csproj" />
     <ProjectReference Include="..\..\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI.csproj" />
+    <ProjectReference Include="..\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0.csproj" />
     <ProjectReference Include="..\TwitterCloneShared\TwitterCloneShared.csproj" />
+    <ProjectReference Include="..\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1260,21 +1260,6 @@
           }
         }
       },
-      "TwitterCloneAPIUserAuth2.0/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "7.0.14",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.13",
-          "Microsoft.AspNetCore.OpenApi": "7.0.14",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
-          "Swashbuckle.AspNetCore": "6.5.0",
-          "TwitterCloneShared": "1.0.0"
-        },
-        "runtime": {
-          "TwitterCloneAPIUserAuth2.0.dll": {}
-        }
-      },
       "TwitterCloneShared/1.0.0": {
         "dependencies": {
           "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
@@ -1286,18 +1271,6 @@
         },
         "runtime": {
           "TwitterCloneShared.dll": {}
-        }
-      },
-      "TwitterCloneUserProfileAPI/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.13",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
-          "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.19.4",
-          "Swashbuckle.AspNetCore": "6.5.0"
-        },
-        "runtime": {
-          "TwitterCloneUserProfileAPI.dll": {}
         }
       }
     }
@@ -2190,17 +2163,7 @@
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
-    "TwitterCloneAPIUserAuth2.0/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "TwitterCloneShared/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "TwitterCloneUserProfileAPI/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

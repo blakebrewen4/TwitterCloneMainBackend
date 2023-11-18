@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "Hash": "Jjgl9kzk5Y3OndgnsogflZtFrTL+CluW2JIEh6117sY=",
+  "Hash": "nsnfQk+elKVNWMekai36X4/7H1HrdKm5jeG0NjwzQPU=",
   "Source": "TwitterCloneMainBackend",
   "BasePath": "_content/TwitterCloneMainBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneAPIUserAuth2.0\\TwitterCloneAPIUserAuth2.0\\TwitterCloneAPIUserAuth2.0.csproj",
+      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneMainBackend\\TwitterCloneAPIUserAuth2.0\\TwitterCloneAPIUserAuth2.0\\TwitterCloneAPIUserAuth2.0.csproj",
       "Version": 2,
       "Source": "TwitterCloneAPIUserAuth2.0",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
@@ -18,7 +18,7 @@
       "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     },
     {
-      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneUserProfileAPI\\TwitterCloneUserProfileAPI\\TwitterCloneUserProfileAPI.csproj",
+      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneMainBackend\\TwitterCloneUserProfileAPI\\TwitterCloneUserProfileAPI\\TwitterCloneUserProfileAPI.csproj",
       "Version": 2,
       "Source": "TwitterCloneUserProfileAPI",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
