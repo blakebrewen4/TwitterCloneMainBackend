@@ -1,26 +1,27 @@
-﻿using Microsoft.EntityFrameworkCore;
-using TwitterCloneMainBackend.Models;
-using Microsoft.Extensions.Configuration;
-using Humanizer.Configuration;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using TwitterCloneShared.SharedModels;
 
 namespace TwitterCloneMainBackend.Data
 {
-    public class TwitterDbContext : DbContext
+    public class TwitterDbContext : IdentityDbContext<User>
     {
 
-        public DbSet<User> Users { get; set; }
         public DbSet<Tweet> Tweets { get; set; }
         public DbSet<Comment> Comments { get; set; }
         public DbSet<Like> Likes { get; set; }
         public DbSet<UserFollow> UserFollows { get; set; }
-        
+
         public TwitterDbContext(DbContextOptions<TwitterDbContext> options) : base(options)
+
         {
         }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+
             modelBuilder.Entity<UserFollow>()
             .HasKey(uf => new { uf.FollowerId, uf.FollowingId });
 
