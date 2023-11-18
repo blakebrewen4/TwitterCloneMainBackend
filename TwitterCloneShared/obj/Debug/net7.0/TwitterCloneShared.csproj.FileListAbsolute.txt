@@ -1,4 +1,5 @@
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\bin\Debug\net7.0\TwitterCloneShared.deps.json
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\bin\Debug\net7.0\TwitterCloneShared.runtimeconfig.json
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\bin\Debug\net7.0\TwitterCloneShared.dll
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\bin\Debug\net7.0\TwitterCloneShared.pdb
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net7.0\TwitterCloneShared.csproj.AssemblyReference.cache
@@ -9,4 +10,5 @@ C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\ob
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net7.0\TwitterCloneShared.dll
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net7.0\refint\TwitterCloneShared.dll
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net7.0\TwitterCloneShared.pdb
+C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net7.0\TwitterCloneShared.genruntimeconfig.cache
 C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneShared\obj\Debug\net7.0\ref\TwitterCloneShared.dll

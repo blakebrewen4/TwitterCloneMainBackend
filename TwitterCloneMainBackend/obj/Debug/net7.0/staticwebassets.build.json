@@ -1,21 +1,32 @@
 {
   "Version": 1,
-  "Hash": "iN0zxuTF0Sj7eaafbLc5K86VSmUuqcvm8nEmBwXKpKk=",
+  "Hash": "Jjgl9kzk5Y3OndgnsogflZtFrTL+CluW2JIEh6117sY=",
   "Source": "TwitterCloneMainBackend",
   "BasePath": "_content/TwitterCloneMainBackend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneAPIUserAuth\\TwitterCloneAPIUserAuth.csproj",
+      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneAPIUserAuth2.0\\TwitterCloneAPIUserAuth2.0\\TwitterCloneAPIUserAuth2.0.csproj",
       "Version": 2,
-      "Source": "TwitterCloneAPIUserAuth",
+      "Source": "TwitterCloneAPIUserAuth2.0",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
       "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    },
+    {
+      "Identity": "C:\\Users\\Blake Brewen\\source\\repos\\TwitterCloneUserProfileAPI\\TwitterCloneUserProfileAPI\\TwitterCloneUserProfileAPI.csproj",
+      "Version": 2,
+      "Source": "TwitterCloneUserProfileAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
   "DiscoveryPatterns": [
