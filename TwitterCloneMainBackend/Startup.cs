@@ -8,12 +8,12 @@ using TwitterCloneMainBackend.Data;
 using Microsoft.EntityFrameworkCore;
 using Humanizer.Configuration;
 using TwitterCloneMainBackend.Utilities;
-using TwitterCloneAPIUserAuth.Middlewares;
-using TwitterCloneAPIUserAuth.Services;
+using TwitterCloneAPIUserAuth2._0.Middlewares;
+using TwitterCloneAPIUserAuth2._0.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using TwitterCloneAPIUserAuth.Extensions;
+using TwitterCloneAPIUserAuth2._0.Extensions;
 
 namespace TwitterCloneMainBackend
 {

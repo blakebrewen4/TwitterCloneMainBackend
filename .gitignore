@@ -1,0 +1,15 @@
+# User-specific files
+.vs/
+
+# Build results
+[Oo]bj/
+[Bb]in/
+
+# NuGet
+*.nupkg
+project.nuget.cache
+project.nuget.dgspec.json
+project.assets.json
+nuget.g.props
+nuget.g.targets
+
