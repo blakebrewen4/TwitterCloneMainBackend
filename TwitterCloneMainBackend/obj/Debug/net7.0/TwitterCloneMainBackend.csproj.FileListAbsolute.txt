@@ -1,9 +1,0 @@
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.csproj.AssemblyReference.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.AssemblyInfoInputs.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.AssemblyInfo.cs
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.csproj.CoreCompileInputs.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.RazorAssemblyInfo.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneMainBackend\obj\Debug\net7.0\TwitterCloneMainBackend.RazorAssemblyInfo.cs
