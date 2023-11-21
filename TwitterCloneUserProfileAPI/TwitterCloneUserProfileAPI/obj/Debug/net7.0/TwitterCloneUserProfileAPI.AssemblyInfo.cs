@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap5")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("95add48e-4275-4b9a-879c-d6ae9e1354a9")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("TwitterCloneUserProfileAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
