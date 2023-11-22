@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Net;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace TwitterCloneAPIUserAuth2._0.Middlewares
@@ -8,10 +10,12 @@ namespace TwitterCloneAPIUserAuth2._0.Middlewares
     public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
+        private readonly ILogger<ExceptionMiddleware> _logger;
 
-        public ExceptionMiddleware(RequestDelegate next)
+        public ExceptionMiddleware(RequestDelegate next, ILogger<ExceptionMiddleware> logger)
         {
-            _next = next;
+            _next = next ?? throw new ArgumentNullException(nameof(next));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
         public async Task InvokeAsync(HttpContext httpContext)
@@ -22,23 +26,25 @@ namespace TwitterCloneAPIUserAuth2._0.Middlewares
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "An unhandled exception has occurred.");
                 await HandleExceptionAsync(httpContext, ex);
             }
         }
 
-        private Task HandleExceptionAsync(HttpContext context, Exception exception)
+        private static Task HandleExceptionAsync(HttpContext context, Exception exception)
         {
             context.Response.ContentType = "application/json";
             context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
-            // In a real-world scenario, you'd likely want to log the exception here as well
-
-            return context.Response.WriteAsync(new
+            var response = new
             {
                 StatusCode = context.Response.StatusCode,
-                Message = "Internal Server Error.",
-                Detailed = exception.Message // You might not want to show this in a production environment
-            }.ToString());
+                Message = "An error occurred while processing your request."
+            };
+
+            var jsonResponse = JsonSerializer.Serialize(response);
+
+            return context.Response.WriteAsync(jsonResponse);
         }
     }
 }

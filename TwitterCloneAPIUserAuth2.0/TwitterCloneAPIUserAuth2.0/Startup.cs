@@ -12,6 +12,7 @@ using TwitterCloneAPIUserAuth2._0.Services;
 using TwitterCloneAPIUserAuth2._0.Repositories;
 using TwitterCloneAPIUserAuth2._0.Extensions;
 using TwitterCloneShared.SharedModels;
+using TwitterCloneAPIUserAuth2._0.Middlewares;
 
 namespace TwitterCloneAPIUserAuth2._0
 {
@@ -67,6 +68,7 @@ namespace TwitterCloneAPIUserAuth2._0
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseMiddleware<ExceptionMiddleware>();
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }

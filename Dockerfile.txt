@@ -1,0 +1,20 @@
+# Use the official Microsoft .NET SDK image to build the solution
+FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build-env
+WORKDIR /app
+
+# Copy everything and restore as distinct layers
+COPY *.sln ./
+COPY TwitterCloneAPIUserAuth2.0/*.csproj ./TwitterCloneAPIUserAuth2.0/
+COPY TwitterCloneFeedServiceAPI/*.csproj ./TwitterCloneFeedServiceAPI/
+# ... Copy other projects if necessary
+RUN dotnet restore
+
+# Copy everything else and build
+COPY . ./
+RUN dotnet publish -c Release -o out
+
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:5.0
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "YourMainAPI.dll"] # Replace with your main API dll

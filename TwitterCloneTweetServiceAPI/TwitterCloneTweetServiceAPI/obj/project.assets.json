@@ -10430,7 +10430,9 @@
     "net7.0": [
       "AutoMapper >= 12.0.1",
       "AutoMapper.Extensions >= 2.1.0",
+      "Microsoft.AspNet.Identity.EntityFramework >= 2.2.4",
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
+      "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.14",
       "Microsoft.AspNetCore.Cors >= 2.2.0",
       "Microsoft.AspNetCore.HttpsPolicy >= 2.2.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.14",
@@ -10501,9 +10503,17 @@
             "target": "Package",
             "version": "[2.1.0, )"
           },
+          "Microsoft.AspNet.Identity.EntityFramework": {
+            "target": "Package",
+            "version": "[2.2.4, )"
+          },
           "Microsoft.AspNetCore.Authentication": {
             "target": "Package",
             "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Authentication.JwtBearer": {
+            "target": "Package",
+            "version": "[7.0.14, )"
           },
           "Microsoft.AspNetCore.Cors": {
             "target": "Package",

@@ -3,13 +3,11 @@
     public class Like
     {
         public int Id { get; set; }
-
-        // Foreign key to the User who liked the tweet
-        public int UserId { get; set; }
+        public string UserId { get; set; }  // Assuming User's Id is a string
         public User User { get; set; }
-
-        // Foreign key to the Tweet that was liked
         public int TweetId { get; set; }
         public Tweet Tweet { get; set; }
     }
+
 }
+
