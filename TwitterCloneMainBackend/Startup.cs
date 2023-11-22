@@ -1,68 +1,71 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
-using TwitterCloneMainBackend.Data;
 using Microsoft.EntityFrameworkCore;
-using Humanizer.Configuration;
-using TwitterCloneMainBackend.Utilities;
-using TwitterCloneAPIUserAuth2._0.Middlewares;
-using TwitterCloneAPIUserAuth2._0.Services;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using TwitterCloneAPIUserAuth2._0.Data;
+using TwitterCloneAPIUserAuth2._0.Services;
+using TwitterCloneAPIUserAuth2._0.Repositories;
 using TwitterCloneAPIUserAuth2._0.Extensions;
+using TwitterCloneShared.SharedModels;
+using TwitterCloneAPIUserAuth2._0.Middlewares;
+using TwitterCloneTweetServiceAPI.Services;
+using TwitterCloneAPIUserAuth2._0;
+using TwitterCloneTweetServiceAPI.Data;
+using TwitterCloneUserProfileAPI.Services;
+// Add other necessary using statements
+// Ensure to include using statements for other APIs if they have unique dependencies
 
 namespace TwitterCloneMainBackend
 {
     public class Startup
     {
+        public IConfiguration Configuration { get; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
-        public IConfiguration Configuration { get; }
-
         public void ConfigureServices(IServiceCollection services)
         {
-            // Database Context Configuration
-            var connectionString = Configuration.GetConnectionString("DefaultConnection");
-            services.AddDbContext<TwitterDbContext>(options => options.UseSqlServer(connectionString));
-            DatabaseTester.TestConnection(connectionString);
+            // User Authentication Services
+            services.AddDbContext<AuthDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddIdentity<User, IdentityRole>()
+                    .AddEntityFrameworkStores<AuthDbContext>()
+                    .AddDefaultTokenProviders();
+            services.Configure<JwtSettings>(Configuration.GetSection("JwtSettings"));
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddJwtBearer(options =>
+                    {
+                        options.TokenValidationParameters = new TokenValidationParameters
+                        {
+                            // Populate token validation parameters
+                        };
+                    });
+            services.AddScoped<UserRepository>();
+            services.AddScoped<UserService>();
+            services.AddScoped<AuthenticationService>();
 
-            // Controllers
+            // Tweet Service
+            services.AddDbContext<TwitterCloneTweetDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddScoped<TweetService>();
+
+            // User Profile Service
+            // Ensure that the UserProfileService is defined in one of your class libraries
+            services.AddScoped<UserProfileService>();
+
+            // Add services for other APIs
+            // ...
+
             services.AddControllers();
-
-            // JWT Authentication Configuration
-            var jwtSettings = Configuration.GetSection("Jwt");
-            var key = Encoding.ASCII.GetBytes(jwtSettings["Key"]);
-            services.AddAuthentication(x =>
-            {
-                x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-                x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            })
-            .AddJwtBearer(x =>
-            {
-                x.RequireHttpsMetadata = false;
-                x.SaveToken = true;
-                x.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(key),
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidIssuer = jwtSettings["Issuer"],
-                    ValidAudience = jwtSettings["Audience"]
-                };
-            });
-
-            // Other services
-            services.AddLogging();
-            services.AddAuthorization();
-            services.AddSingleton<AuthenticationService>();
+            services.AddSwaggerGen(); // Optional, but useful for API documentation
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -70,30 +73,24 @@ namespace TwitterCloneMainBackend
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
+                app.UseMiddleware<ExceptionMiddleware>();
+                app.UseSwagger();
+                app.UseSwaggerUI();
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
             app.UseRouting();
 
-            // Authentication and Authorization
             app.UseAuthentication();
             app.UseAuthorization();
 
-            // Custom Middlewares
-            app.UseCustomExceptionMiddleware();
-
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapControllers();
             });
+
+            // Add other necessary middleware as required
+            // ...
         }
     }
 }

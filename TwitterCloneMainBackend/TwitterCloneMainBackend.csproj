@@ -40,7 +40,9 @@
     <ProjectReference Include="..\..\TwitterCloneMainBackend\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0.csproj" />
     <ProjectReference Include="..\..\TwitterCloneMainBackend\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI.csproj" />
     <ProjectReference Include="..\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0\TwitterCloneAPIUserAuth2.0.csproj" />
+    <ProjectReference Include="..\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI.csproj" />
     <ProjectReference Include="..\TwitterCloneShared\TwitterCloneShared.csproj" />
+    <ProjectReference Include="..\TwitterCloneTweetServiceAPI\TwitterCloneTweetServiceAPI\TwitterCloneTweetServiceAPI.csproj" />
     <ProjectReference Include="..\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI\TwitterCloneUserProfileAPI.csproj" />
   </ItemGroup>
 

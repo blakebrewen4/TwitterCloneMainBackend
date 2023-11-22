@@ -1,7 +1,0 @@
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.csproj.AssemblyReference.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.AssemblyInfoInputs.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.AssemblyInfo.cs
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.csproj.CoreCompileInputs.cache
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Blake Brewen\source\repos\TwitterCloneMainBackend\TwitterCloneFeedServiceAPI\TwitterCloneFeedServiceAPI\obj\Debug\net7.0\TwitterCloneFeedServiceAPI.MvcApplicationPartsAssemblyInfo.cache

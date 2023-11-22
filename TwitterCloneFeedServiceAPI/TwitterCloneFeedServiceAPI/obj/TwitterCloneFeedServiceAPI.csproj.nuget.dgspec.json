@@ -87,17 +87,9 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.8.0, )"
-            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.4, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.20.69, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -110,10 +102,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.6.2, )"
             }
           },
           "imports": [
@@ -128,9 +116,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
@@ -250,17 +235,9 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.8.0, )"
-            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.19.4, )"
-            },
-            "Moq": {
-              "target": "Package",
-              "version": "[4.20.69, )"
             },
             "Serilog.AspNetCore": {
               "target": "Package",
@@ -273,10 +250,6 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
-            },
-            "xunit": {
-              "target": "Package",
-              "version": "[2.6.2, )"
             }
           },
           "imports": [
